@@ -1,0 +1,77 @@
+@import 'reset';
+@import "~bootstrap/scss/bootstrap";
+@import "colors";
+
+nav{
+    &.navbar{
+        &.bg-light{
+            background-color: $green !important;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            z-index: 2;
+            .navbar-brand{
+                a{
+                    color: $white;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.layout{
+    position: relative;
+    .sidebar-nav{
+        position: fixed;
+        width: 200px;
+        border-right: 1px solid $grey;
+        height: 100vh;
+        background-color: $lightgrey;
+        z-index: 1;
+        top: 0px;
+        padding-top: 59px;
+        ul{
+            &.navigation_list{
+                li{
+                    list-style: none;
+                    a{
+                        display: block;
+                        padding: 15px 10px 15px 20px;
+                        color: $black;
+                        &.active{
+                            background-color: rgba(62, 162, 62, 0.4);
+                            color: #ffffff;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                            background-color: $grey;
+                        }
+                        span{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content{
+        background-color: $white;
+        margin-left: 200px;
+        padding-top: 70px;
+    }
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #fbfbfb;
+    padding: 10px 10px 10px 230px;
+    border-top: 1px solid #dadada;;
+    p{
+        margin-bottom: 0px;
+        color: $black;
+        font-size: 12px;
+    }
+}
