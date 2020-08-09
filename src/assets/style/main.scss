@@ -34,6 +34,9 @@ nav{
         padding-top: 59px;
         ul{
             &.navigation_list{
+                margin-bottom: 0px;
+                height: 100%;
+                position: relative;
                 li{
                     list-style: none;
                     a{
@@ -51,6 +54,11 @@ nav{
                         span{
                             margin-left: 20px;
                         }
+                    }
+                    &:last-child{
+                        position: absolute;
+                        bottom: 0px;
+                        width: 100%;
                     }
                 }
             }
@@ -77,6 +85,23 @@ nav{
                 }
             }
         }
+        .login-page{
+            &-box{
+                width: 40%;
+                margin: 30px auto;
+                padding: 30px;
+                border: 1px solid $grey;
+                border-radius: 4px;
+                .if-login{
+                    font-size: 12px;
+                }
+                button{
+                    &.button-submit{
+                        width: 100%;
+                    }
+                }
+            }
+        }
         .signup-page{
             &-user-img{
                 img{
@@ -92,6 +117,159 @@ nav{
                         width: 20%;
                     }
                 }
+            }
+        }
+        .home-page{
+            &-banner{
+                display: block;
+                height: 150px;
+                background-image: url('../img/banner2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-bottom: 20px;
+            }
+            &-poli-listing{
+                margin: 20px 0px;
+                .poli-listing-box{
+                    border: 1px solid $grey;
+                    border-radius: 4px;
+                    padding: 4px;
+                    position: relative;
+                    margin-bottom: 20px;
+                    &:hover{
+                        border-color: $green;
+                    }
+                    .banner-poli{
+                        background-image: url('../img/dental.jpg');
+                        background-size: cover;
+                        height: 250px;
+                        background-repeat: no-repeat;
+                        &.obgyn{
+                            background-image: url('../img/obgyn.jpg');
+                        }
+                        &.internist{
+                            background-image: url('../img/internist.jpg');
+                        }
+                    }
+                    h4{
+                        margin-bottom: 0px;
+                        position: absolute;
+                        bottom: 19px;
+                        width: 90%;
+                        background: rgba(255,255,255,0.6);
+                        padding: 6px;
+                        font-size: 19px;
+                        color: #056705;
+                        left: 5%;
+                    }
+                }
+            }
+            &-doctor-schedule{
+                border-top: 1px solid #dadada;
+                padding-top: 30px;
+                p{
+                    margin-top: 20px;
+                }
+                .table-responsive{
+                    thead{
+                        tr{
+                            th{
+                                vertical-align: middle;
+                                border-right: 1px solid #dee2e6;
+                                border-left: 1px solid #dee2e6;
+                                color: $black;
+                                background-color: #eaf9ea;
+                                text-align: center;
+                            }
+                            &:first-child{
+                                th{
+                                    &:first-child{
+                                        text-align: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                vertical-align: middle;
+                                font-size: 14px;
+                                text-align: center;
+                                border-right: 1px solid #dee2e6;
+                                border-left: 1px solid #dee2e6;
+                                a{
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    color: $green;
+                                    img{
+                                        &.doctor-profile{
+                                            width: 68px;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                    p{
+                                        margin-bottom: 0px;
+                                        margin-top: 0px;
+                                        font-size: 16px;
+                                        text-align: left;
+                                    }
+                                }
+                            }
+                            &:last-child{
+                                td{
+                                    border-bottom: 1px solid #dee2e6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .doctor-detail-page{
+            h3{
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: $black;
+            }
+            &-detail{
+                table{
+                    tr{
+                        td{
+                            &.star-rate{
+                                color: #f9be19;
+                            }
+                        }
+                    }
+                }
+            }
+            .doctor-poling{
+                border-top: 1px solid $grey;
+                padding-top: 20px;
+                margin-top: 30px;
+                &-table{
+                    display: flex;
+                    flex-direction: row;
+                    span{
+                        &:first-child{
+                            width: 30%;
+                        }
+                        &:nth-child(2){
+                            width: 2%;
+                        }
+                    }
+                }
+                button{
+                    margin-top: 20px;
+                    width: 20%;
+                }
+            }
+        }
+        .statistic-page{
+            h3{
+                margin-bottom: 30px;
             }
         }
     }
