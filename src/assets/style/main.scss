@@ -60,6 +60,40 @@ nav{
         background-color: $white;
         margin-left: 200px;
         padding-top: 70px;
+        padding-bottom: 70px;
+        .profile-page{
+            &-user-detail{
+                table{
+                    tr{
+                        td{
+                            &:nth-child(1){
+                                width: 15%;
+                            }
+                            button{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .signup-page{
+            &-user-img{
+                img{
+                    margin-bottom: 20px;
+                }
+                button{
+                    width: 100%;
+                }
+            }
+            &-user-detail{
+                button{
+                    &.button-submit{
+                        width: 20%;
+                    }
+                }
+            }
+        }
     }
 }
 .footer{
